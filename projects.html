@@ -1,80 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eric Yang</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eric Yang</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
 
-    <div class="container">
-        <div class="home-page">
-            <a href="index.html">Eric Yang</a>
-        </div>
-        <div class="nav-wrapper">
-            <div class="nav-link-wrapper">
-                <a href="index.html">About</a>
-            </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-name" href="index.html"><h1 class="display-3">ERIC YANG</h1></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">ABOUT</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="projects.html">PROJECTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="leadership.html">LEADERSHIP</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="honors.html">HONORS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-            <div class="nav-link-wrapper">
-                <div class="selected">
-                    <a href="projects.html">Projects</a>
+<!--- Cards -->
+<body>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img top" src="Academia Image.jpg">
+                    <div class="card-body">
+                        <h1 class="card-title">Academia</h1>
+                        <p class="card-text">Projects I have completed through coursework, 
+                            research and extracurriculars at the University of Washington.</p>
+                        <a href="projects-academia.html" class="btn btn-outline-secondary">See Projects</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="nav-link-wrapper">
-                <a href="leadership.html">Leadership</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img top" src="Industry Image.jpeg">
+                    <div class="card-body">
+                        <h1 class="card-title">Industry</h1>
+                        <p class="card-text">Projects I have completed through internship 
+                            experiences in industry settings.<br><br></p>
+                        <a href="projects-industry.html" class="btn btn-outline-secondary">See Projects</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="nav-link-wrapper">
-                <a href="honors.html">Honors</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img top" src="Personal Image.jpg">
+                    <div class="card-body">
+                        <h1 class="card-title">Personal</h1>
+                        <p class="card-text">Projects I have completed in my spare time.<br><br><br></p>
+                        <a href="projects-personal.html" class="btn btn-outline-secondary">See Projects</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="nav-link-wrapper">
-                <a href="contact.html">Contact</a>
-            </div> 
-        </div>
-        <div class="temp">
-            <a href="http://coledeforest.com/">DeForest Research Group</a>
         </div>
     </div>
-</head>
-<body>
     
 </body>
+<!--- Footer -->
 <footer>
-    <div class="links">
-        <div class="CV">
-            <a href="CV - Eric Yang  .pdf" target="_blank"> <img src="CV Icon.png" alt="CV Icon" draggable="false" 
-                style="width:41%;height:auto;"></a>
-        </div>
-        <div class="Email">
-            <a href="mailto:ericyang789@gmail.com"> <img src="Email Icon.png" alt="Email Icon" draggable="false" 
-                style="width:33%;height:auto;"></a>
-        </div>
-        <div class="LinkedIn">
-            <a href="https://www.linkedin.com/in/ericyang98/" target="_blank"> <img src="LinkedIn Icon.png" alt="LinkedIn Icon"
-                draggable="false" style="width:36%;height:auto;"></a>
-        </div>
-        <div class="GitHub">
-            <a href="https://github.com/ericyang789" target="_blank"> <img src="Github Icon.png" alt="GitHub Icon"
-                draggable="false" style="width:33%;height:auto;"></a>
-        </div>
-        <div class="Google-scholar">
-            <a href="https://bit.ly/2WPMHr5" target="_blank"> <img src="Google Scholar Icon.png" alt="Google Scholar Icon"
-                draggable="false" style="width:35%;height:auto;"></a>
-        </div>
-    </div>
-    <div class="foot">
-        <br>
-        ©
-        <script type="text/javascript">
-            document.write(new Date().getFullYear());
-        </script>
-        Eric Yang
-        <br>
-        I handcrafted this site with HTML, CSS and JavaScript
-        <br>
-        Site last updated March 28th, 2020
-     </div>
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-12 social padding">
+				<a href="CV - Eric Yang  .pdf" target="_blank"><i class ="fas fa-id-card"></i></a>
+				<a href="mailto:ericyang789@gmail.com" target="_blank"><i class ="fas fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/ericyang98/" target="_blank"><i class ="fab fa-linkedin"></i></a>
+				<a href="https://github.com/ericyang789" target="_blank"><i class ="fab fa-github"></i></a>
+				<a href="https://bit.ly/2WPMHr5" target="_blank"><i class ="fas fa-graduation-cap"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid padding">
+		<div class="text-center padding">
+			©
+			<script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script>
+			Eric Yang
+			<br>
+			I crafted this site with HTML and CSS aided by Bootstrap
+			<br>
+			Site last updated March 30th, 2020
+		</div>
+	</div>
 </footer>
+
 </html>

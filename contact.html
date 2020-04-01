@@ -1,75 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eric Yang</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eric Yang</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="home-page">
-            <a href="index.html">Eric Yang</a>
-        </div>
-        <div class="nav-wrapper">
-            <div class="nav-link-wrapper">
-                <a href="index.html">About</a>
-            </div>
 
-            <div class="nav-link-wrapper">
-                <a href="projects.html">Projects</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-name" href="index.html"><h1 class="display-3">ERIC YANG</h1></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.html">PROJECTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="leadership.html">LEADERSHIP</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="honors.html">HONORS</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<body>
+    <div class="container-fluid padding">
+        <h1 class="display-5">Let's connect!</h1>
+        
+        <form action="https://formspree.io/xnqzeqqj" method="POST" enctype="multipart/form-data">
+            <div class="form-group padding">      
+                <label for="name" class="mb-0">
+                    Name
+                    <label class="text-danger">*</label>
+                </label>
+                <br>
+                <input type="text" class="form-control" placeholder="Your name" name="Name" aria-label="Name" 
+                aria-describedby="basic-addon1" required="">
             </div>
-
-            <div class="nav-link-wrapper">
-                <a href="leadership.html">Leadership</a>
+            <div class="form-group padding">      
+                <label for="email" class="mb-0">
+                    Email Address
+                    <label class="text-danger">*</label>
+                </label>
+                <br>
+                <input type="text" class="form-control" placeholder="Your email" name="_replyto" aria-label="Email" 
+                aria-describedby="basic-addon1" required="">
             </div>
-
-            <div class="nav-link-wrapper">
-                <a href="honors.html">Honors</a>
+            <div class="form-group padding">      
+                <label for="number" class="mb-0">
+                    Phone number
+                </label>
+                <br>
+                <input type="text" class="form-control" placeholder="Your number" name="Number" aria-label="Number" 
+                aria-describedby="basic-addon1">
             </div>
-
-            <div class="nav-link-wrapper">
-                <div class="selected">
-                    <a href="contact.html">Contact</a>
+            <div class="form-group padding">      
+                <label for="subject" class="mb-0">
+                    Subject
+                </label>
+                <br>
+                <input type="text" class="form-control" placeholder="Title your message" name="Subject" aria-label="Subject" 
+                aria-describedby="basic-addon1">
+                <input type="hidden" name="_subject" value="subject" />
+            </div>
+            <div class="form-group padding">
+                <label for="comment" class="mb-0">
+                    Message
+                    <label class="text-danger">*</label>
+                </label>
+                <br>
+                <textarea class="form-control" placeholder="Type your message here" name="Message" rows="5" id="message" required=""></textarea>
+            </div>
+            <div class="form-group padding">
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="contact-submit">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
+<!--- Footer -->
 <footer>
-    <div class="links">
-        <div class="CV">
-            <a href="CV - Eric Yang  .pdf" target="_blank"> <img src="CV Icon.png" alt="CV Icon" draggable="false" 
-                style="width:41%;height:auto;"></a>
-        </div>
-        <div class="Email">
-            <a href="mailto:ericyang789@gmail.com"> <img src="Email Icon.png" alt="Email Icon" draggable="false" 
-                style="width:33%;height:auto;"></a>
-        </div>
-        <div class="LinkedIn">
-            <a href="https://www.linkedin.com/in/ericyang98/" target="_blank"> <img src="LinkedIn Icon.png" alt="LinkedIn Icon"
-                draggable="false" style="width:36%;height:auto;"></a>
-        </div>
-        <div class="GitHub">
-            <a href="https://github.com/ericyang789" target="_blank"> <img src="Github Icon.png" alt="GitHub Icon"
-                draggable="false" style="width:33%;height:auto;"></a>
-        </div>
-        <div class="Google-scholar">
-            <a href="https://bit.ly/2WPMHr5" target="_blank"> <img src="Google Scholar Icon.png" alt="Google Scholar Icon"
-                draggable="false" style="width:35%;height:auto;"></a>
-        </div>
-    </div>
-    <div class="foot">
-        <br>
-        ©
-        <script type="text/javascript">
-            document.write(new Date().getFullYear());
-        </script>
-        Eric Yang
-        <br>
-        I handcrafted this site with HTML, CSS and JavaScript
-        <br>
-        Site last updated March 28th, 2020
-     </div>
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-12 social padding">
+				<a href="CV - Eric Yang  .pdf" target="_blank"><i class ="fas fa-id-card"></i></a>
+				<a href="mailto:ericyang789@gmail.com" target="_blank"><i class ="fas fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/ericyang98/" target="_blank"><i class ="fab fa-linkedin"></i></a>
+				<a href="https://github.com/ericyang789" target="_blank"><i class ="fab fa-github"></i></a>
+				<a href="https://bit.ly/2WPMHr5" target="_blank"><i class ="fas fa-graduation-cap"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid padding">
+		<div class="text-center padding">
+			©
+			<script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script>
+			Eric Yang
+			<br>
+			I crafted this site with HTML and CSS aided by Bootstrap
+			<br>
+			Site last updated March 30th, 2020
+		</div>
+	</div>
 </footer>
+
 </html>
