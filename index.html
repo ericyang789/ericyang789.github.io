@@ -9,6 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="mailgo.min.js" defer></script>
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -46,20 +47,18 @@
 <div class="container-fluid padding">
 	<div class="row padding">
 		<div class="col-lg-6">
-			<img src="Images/Portrait.jpg" class = "img-fluid">
+			<img src="Images/Portrait.jpg" class = "img-fluid" style = "width:80%; height:auto;">
 		</div>
 		<br>
 		<div class="col-lg-6">
 			<h1 class="display-5">About me</h1>
-			<p class ="about me">Hello! I recently completed my BS in 
-				Bioengineering and minor in applied mathematics at the <i>University of Washington</i>. Since my first 
-				introduction to computer science, I have been fascinated by the tremendous impact that data and 
-				computational tools have in driving medical innovation. With this passion and curiosity, I continue 
-				to apply biomedical informatics principles in my research in tissue engineering, global health 
-				and genomics in both academic and industry settings. Specifically, I am interested in leveraging 
-				machine learning tools to advance personalized medicine and progress genomic-based disease diagnosis 
-				and treatment. This fall, I will be attending the Master of Biomedical Informatics program at <i>Harvard 
-				Medical School</i> to further my academic training.</p>
+			<p class ="about me">Hello! I am a Masters student studying biomedical informatics at <i>Harvard 
+				Medical School</i>. I recently completed my BS in Bioengineering and minor in applied mathematics at the 
+				<i>University of Washington</i>. Since my first introduction to data science, I have been fascinated by 
+				the tremendous impact that machine learning and computational tools have in driving medical innovation. 
+				Specifically, I am interested in leveraging deep learning techniques to advance personalized medicine and 
+				progress genomic-based disease diagnosis and treatment.</p>
+				
 			<br> 
 			<br>
 			<h1 class="display-5">About this site</h1>
@@ -94,7 +93,11 @@
 			<br>
 			I crafted this site with HTML and CSS aided by Bootstrap
 			<br>
-			Site last updated June 15th, 2020
+			Site last updated 
+			<script type="text/javascript">
+				localStorage.setItem("updateDate", "August 17th, 2020")
+				document.write(localStorage.getItem("updateDate"));
+			</script>
 		</div>
 	</div>
 </footer>

@@ -8,7 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="mailgo.min.js" defer></script>
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -100,7 +101,7 @@
             </div>
             <br>
             <div class="col-lg-5 text-center center-column">
-                <img src="Images/URP Image.png" class = "img-fluid" style = "width: 60%;height: auto;">
+                <img src="Images/URP Image.png" class = "img-fluid">
             </div>
         </div>
     </div>
@@ -108,7 +109,7 @@
     <div class="container-fluid padding even">
         <div class="row padding">
             <div class="col-lg-5 text-center center-column">
-                <img src="Images/ASUW Image.png" class = "img-fluid" style = "width: 60%;height: auto;">
+                <img src="Images/ASUW Image.png" class = "img-fluid">
             </div>
             <div class="col-lg-7">
                 <h1 class="display-5">Associated Students of the University of Washington</h1>
@@ -148,7 +149,7 @@
             </div>
             <br>
             <div class="col-lg-5 text-center center-column">
-                <img src="Images/STEM Outreach Image.jpeg" class = "img-fluid" style = "width: 60%;height: auto;">
+                <img src="Images/STEM Outreach Image.jpeg" class = "img-fluid">
             </div>
         </div>
     </div>
@@ -177,7 +178,10 @@
 			<br>
 			I crafted this site with HTML and CSS aided by Bootstrap
 			<br>
-			Site last updated June 15th, 2020
+			Site last updated 
+			<script type="text/javascript">
+				document.write(localStorage.getItem("updateDate"));
+			</script>
 		</div>
 	</div>
 </footer>
