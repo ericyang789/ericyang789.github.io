@@ -4,78 +4,1011 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Eric Yang</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="mailgo.min.js" defer></script>
 	<link href="style.css" rel="stylesheet">
 </head>
-<body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-name" href="index.html"><h1 class="display-3">ERIC YANG</h1></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">ABOUT</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="projects.html">PROJECTS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="leadership.html">LEADERSHIP</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="honors.html">HONORS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">CONTACT</a>
-				</li>
-			</ul>
+<body data-spy="scroll">
+	<!-- Navigation -->
+	<nav id="navbar-main" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-name" href="#"><h1 class="display-3">ERIC YANG</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<script>
+				$(function() {
+					$('.nav-item').on('click', function(){ 
+						if($('.navbar-toggler').css('display') !='none'){
+							$('.navbar-toggler').trigger( "click" );
+						}
+					});
+				});
+			</script>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">PROJECTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#leadership">LEADERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#honors">HONORS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact" >CONTACT</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
 
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-lg-6">
-			<img src="Images/Portrait.jpg" class = "img-fluid" style = "width:80%; height:auto;">
-		</div>
+	<!--- About -->
+	<div id="about">
 		<br>
-		<div class="col-lg-6">
-			<h1 class="display-5">About me</h1>
-			<p class ="about me">Hello! I am a Masters student studying biomedical informatics at <i>Harvard 
-				Medical School</i>. I recently completed my BS in Bioengineering and minor in applied mathematics at the 
-				<i>University of Washington</i>. Since my first introduction to data science, I have been fascinated by 
-				the tremendous impact that machine learning and computational tools have in driving medical innovation. 
-				Specifically, I am interested in leveraging deep learning techniques to advance personalized medicine and 
-				progress genomic-based disease diagnosis and treatment.</p>
-				
-			<br> 
+		<br>
+		<br>
+	</div>
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<div class="col-lg-12">
+					<img src="Images/Portrait.jpg" class = "img-fluid">
+					<div class="container-fluid">
+						<div class="row text-center">
+							<div class="col-12 social padding">
+								<a href="Documents/Resume - Eric Yang  .pdf" target="_blank"><i class ="fas fa-id-card"></i></a>
+								<a href="mailto:ericyang789@gmail.com" target="_blank"><i class ="fas fa-envelope"></i></a>
+								<a href="https://www.linkedin.com/in/ericyang98/" target="_blank"><i class ="fab fa-linkedin"></i></a>
+								<a href="https://github.com/ericyang789" target="_blank"><i class ="fab fa-github"></i></a>
+								<a href="https://bit.ly/2WPMHr5" target="_blank"><i class ="fas fa-graduation-cap"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<br>
-			<h1 class="display-5">About this site</h1>
-			<p class ="about me">In my courses, research, internship experiences and spare time, I have completed 
-				various projects that have allowed me to develop my expertise in software development and engineering 
-				design. I have reflected on each of them in this handcrafted website to showcase my professional growth. 
-				Please select the other header tabs to learn more about my journey. Let's connect!</p>
+			<div class="col-lg-6">
+				<div class="col-lg-12">
+					<h1 class="display-5">About me</h1>
+					<p class ="about me">Hello! I am a Masters student studying biomedical informatics at <i>Harvard 
+						Medical School</i>. I recently completed my BS in Bioengineering and minor in applied mathematics at the 
+						<i>University of Washington</i>. Since my first introduction to data science, I have been fascinated by 
+						the tremendous impact that machine learning and computational tools have in driving medical innovation. 
+						Specifically, I am interested in leveraging deep learning techniques to advance personalized medicine and 
+						progress disease diagnosis and treatment.</p>
+						
+					<br>
+					<h1 class="display-5">About this site</h1>
+					<p class ="about me">In my courses, research, internship experiences and spare time, I have completed 
+						various projects that have allowed me to develop my expertise in data science and engineering 
+						design. I have reflected on them in this handcrafted website to showcase my professional growth. 
+						Please scroll down to learn more about my journey. Let's connect!</p>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+
+	<!--- Projects -->
+	<div id="projects">
+		<br>
+		<br>
+		<br>
+	</div>
+
+	<div class="container-fluid padding even">
+		<h1 class="display-5 padding">Projects</h1>
+		
+        <div class="row padding">
+            <div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Viz.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">NEISS DataViz</h1>
+						<p class="card-subtitle">Autumn 2020</p>
+						<p class="card-text">RShiny app for injury database visualization</p>
+						<a href="#VizModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="VizModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">NEISS DataViz</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>The National Electronic Injury Surveillance System (NEISS) collects data on consumer
+								product-related injuries occuring in the United States. With millions of observations 
+								dating back to 2008 recorded in tabular form, there is a need for a visualization platform 
+								to perform exploratory analyses on this large data set. Using <i>RShiny</i> and <i>tidyverse</i> 
+								packages, I created a reactive dashboard that allows user customization for graphical displays of  
+								NEISS data. The flexible application enables different subsets, facets and groups based on
+								patient demographic and injury diagnoses to help users observe trends in the database.
+							</p>
+								<a href="https://github.com/ericyang789/NEISS-DataViz" target="_blank" class="btn btn-outline-info">Code</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+            <div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Cancer.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Breast Cancer Classifier</h1>
+						<p class="card-subtitle">Spring 2020</p>
+						<p class="card-text">Random forest classifier on breast tumors</p>
+						<a href="#BCModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="BCModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Breast Cancer Classifier</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>To support breast tumor diagnostics, I constructed a machine learning model for malignant vs benign cancer classification. I optimized a random
+								forest model trained on digitalized images of fine needle aspirates from breast masses. Leveraging popular <i>Python</i> 
+								packages such as <i>Scikit-Learn</i>, <i>Pandas</i>, <i>Numpy</i>, and <i>Scipy</i> to tune model hyperparameters, I achieved high classification accuracies
+								(>90%) for my training and validation datasets.</p>
+								<a href="https://github.com/ericyang789/Cancer-Classifier" target="_blank" class="btn btn-outline-info">Code</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/COVID.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Covid-19 Testing Triage</h1>
+						<p class="card-subtitle">Spring 2020</p>
+						<p class="card-text">Mobile app prototype to identify COVID-spreaders</p>
+						<a href="#COVModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="COVModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Covid-19 Testing Triage</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>During the beginning of the Covid-19 outbreak in 2020, I participated in MIT's Beat the Pandemic Hackathon. 
+								My interdiciplinary team brainstormed and prototyped a mobile application to identify essential workers
+								likely to transmit the virus, enabling the ability to triage limited testing resources. The technology computed risk scores
+								based on self reporting and consented GPS-based user data. I was tasked to showcase the frontend interface
+								for clinician and patient ease-of-use using <i>Figma</i>. The team presented the proposed solution to healthcare
+								and technology leaders, demonstrating the potential for this triaging technology.
+							 </p>
+							 <a href="Documents/Testing_Triage_Presentation.pdf" target="_blank" class="btn btn-outline-info">Presentation</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Website.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Digital Portfolio</h1>
+						<p class="card-subtitle">Spring 2020</p>
+						<p class="card-text">Responsive handcrafted personal webpage</p>
+						<a href="#WebModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="WebModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Digital Portfolio</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Building this portfolio website was my first introduction to web development with <i>HTML</i> 
+								and <i>CSS</i>. I self-learned the programming syntax, implemented best practices, and identified resources such as 
+								<a href="https://pages.github.com/" target="_blank">Github Pages</a>, 
+								 <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> and 
+								 <a href="https://formspree.io/" target="_blank">Formspree</a>
+								to aid my development. I learned a lot in the layout iteration process and techniques that enable sites to scale across
+								all devices. If you have suggestions on how I can improve my site, please don't hesitate to 
+								<a href="#contact">reach out</a>!</p>
+								<a href="https://github.com/ericyang789/ericyang789.github.io" target="_blank" class="btn btn-outline-info">Code</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Bioinfo.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Bioscience Python Tutorials</h1>
+						<p class="card-subtitle">Winter 2019 - Spring 2020</p>
+						<p class="card-text">Python workbooks with biomedical applications</p>
+						<a href="#BPTModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="BPTModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Bioscience Python Tutorials</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>As the fields of biomedical informatics and computational biology continue to grow, Python is an 
+								increasingly popular programming language in academia and industry. For my undergraduate Departmental Honors Project, 
+								my team designed bioscience-related <i>Python</i> modules for bioengineering students at the University 
+								of Washington. Topics such as computational protein design, neural networks and genomic sequence analysis are explored.
+								Partnering with faculty and academic advisors, the tutorials are undergoing pilot-testing,
+								where student feedback will guide the next iterations of curriculum development.
+							</p>
+							<a href="https://github.com/ericyang789/bioscience-python-tutorials" target="_blank" class="btn btn-outline-info">Code</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Nanogels.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Logic Degradable Nanogels</h1>
+						<p class="card-subtitle">Summer 2018 - Spring 2020</p>
+						<p class="card-text">Chemotherapeutics-delivering biomaterials platform</p>
+						<a href="#LogModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="LogModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Logic Degradable Nanogels</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>For my undergraduate thesis at the UW, I developd logic degradable nanogels at the 
+								<a href="http://coledeforest.com/" target="_blank">DeForest Research Group</a> 
+								. The delivery of cell and drug-based chemotherapeutics to tumors have presented major 
+								challenges in effective cancer treatment. Towards this, I designed a chemical 
+								framework for creating user-programmable nanogels that undergo programmed degradation in 
+								response to multiple environmental cues following Boolean logic. User-specified combinations 
+								of environmental inputs (e.g., tumor-presented enzymes, reducing conditions) yield material 
+								breakdown, thereby triggering therapeutic release. Through this work, I have been awarded two 
+								research scholarships and presented my studies at two professional research symposiums.
+							</p>
+							<a href="Documents/Yang Capstone Final Report.pdf" target="_blank" class="btn btn-outline-info">Report</a>
+							<a href="Documents/2019 Undergraduate Research Symposium Poster.pdf" target="_blank" class="btn btn-outline-info">Poster</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Map.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">HuskyMaps</h1>
+						<p class="card-subtitle">Winter 2020</p>
+						<p class="card-text">Web mapping platform with route planning</p>
+						<a href="#HMModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="HMModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">HuskyMaps</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Over the course of my 
+								<a href="https://courses.cs.washington.edu/courses/cse373/20wi/" target="_blank">Data Structures and Algorithms class</a> 
+								at the UW, I built HuskyMaps, a navigation tool 
+								for University of Washington and regions surrounding it. Internally with <i>Java</i>, I implemented A* Search algorithms 
+								for path finding, an Autocomplete framework for search bar text suggestions, and used data structures such 
+								as k-d Trees and Deques for algorithm efficiency. Although I am not able to share my code here due to 
+								academic integrity, building this project has been an incredibly fulfilling experience and it allowed me 
+								to sharpen my data structures and algorithms knowledge.</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Protein.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Thermostable β-Glucanase</h1>
+						<p class="card-subtitle">Winter 2020</p>
+						<p class="card-text">Computational design of beer-brewing protein</p>
+						<a href="#ProteinModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="ProteinModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Thermostable β-Glucanase</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p> Protein design has become more and more computational. Here, I designed a thermostable β-Glucanase enzyme for beer brewing. Due to high temperatures 
+								during brewing workflows, there is tremendous need in developing a β-Glucanase variant that can maximize 
+								enzyme efficacy at high temperatures. With <i>Rosetta</i>, <i>Chimera</i> and intuition about protein structure and functions, I successfully designed an enzyme with 
+								such properties, with the results verified by <i>Molecular Dynamics Simulations</i> via <i>Bash</i> scripting.
+							</p>
+							<a href="Documents/Final Report - EY.pdf" target="_blank" class="btn btn-outline-info">Report</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/ACV Image.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">3D Arteriole Capillary Venule Unit</h1>
+						<p class="card-subtitle">Spring 2017 - Winter 2020</p>
+						<p class="card-text">Engineered vessels to study malaria-infected red blood cells</p>
+						<a href="#ACVModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="ACVModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">3D Arteriole Capillary Venule Unit</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Serving as a researcher in the  
+								<a href="http://coledeforest.com/" target="_blank">DeForest Research Group</a>  
+								at the UW, I assisted in engineering a 3D arteriole-capillary-venule unit with unprecedented resolution 
+								to study malaria- infected red blood cells. To process large time series datasets generated by transmission electron 
+								microscopes during blood flow experiments, I developed image and statistical analysis software 
+								in <i>Matlab</i> and used these computational scripts to investigate cell-vessel interactions. Throughout the 
+								project, not only did I acquire invaluable expertise in tissue engineering and infectious disease, I was 
+								also exposed to biocomputational algorithms that are widely used today. Furthermore, I was fortunate to 
+								publish my work in <i>Science Advances</i>. 
+							</p>
+							<a href="https://advances.sciencemag.org/content/6/3/eaay7243" target="_blank" class="btn btn-outline-info">Manuscript</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Mosquito.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Anophelseize</h1>
+						<p class="card-subtitle">Winter 2017 - Winter 2020</p>
+						<p class="card-text">Male mosquito capturing device</p>
+						<a href="#AnoModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="AnoModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Anophelseize</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Taking on one of the Grand Challenges in Global Health issued by the Bill & Melinda Gates Foundation, 
+								I co-founded Anophelseize. Utilizing acoustic and chemo attractants, Anophelseize is an efficient, low-cost 
+								capturing device for male mosquitoes of the species Anopheles gambiae to be used for field malaria research. 
+								Prototypes were generated with <i>AutoCAD</i>, 3D printing, laser cutting and other fabrication techniques. 
+								The team secured $2000+ in prototype funding and exceled in 
+								<a href="https://blog.foster.uw.edu/2018-health-innovation-challenge-finalists/" 
+									target="_blank">business-health competitions</a>.
+								This unique, collaborative 
+								project has inspired me to further my career in biomedical informatics by opening my eyes to the importance of 
+								computational sciences in global health, given the complex large datasets that transcend national borders. 
+								</p>
+								<a href="Documents/Anophelseize Business Plan.pdf" target="_blank" class="btn btn-outline-info">Business Plan</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/LabView.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">PID Responsive Blanket</h1>
+						<p class="card-subtitle">Winter 2019</p>
+						<p class="card-text">PID controlled heating blanket for hypothermia first aid</p>
+						<a href="#PIDModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="PIDModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">PID Responsive Blanket</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>As hypothermia kills twice as many people as heat does in the US, there is need in developing an active, 
+								modular, portable heating blanket to be used before emergency room arrival. Towards this, I developed a PID 
+								controlled hypothermia blanket model using <i>LabView</i> simulations and basic circuitry 
+								along with my peers. Our system achieved a 2 degree/min temperature increase by tuning the PID parameters.
+							</p>
+							<a href="Documents/PID Hypothermia Blanket.pdf" target="_blank" class="btn btn-outline-info">Presentation</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/FlowCell.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Continuous Genomic Sequencing</h1>
+						<p class="card-subtitle">Summer 2019</p>
+						<p class="card-text">Novel DNA sequencing platform</p>
+						<a href="#FCModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="FCModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Continuous Genomic Sequencing</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>I served as a research associate intern within the materials science and advanced platform technology 
+								development team at
+								<a href="https://www.illumina.com/" target="_blank">Illumina, Inc</a>, 
+								a world leader in sequencing.  
+								To reduce sequencing waste and decrease genomic sequencing turn-around time,
+								I developed and automated surface-based DNA assays that enables multi-sample sequencing on a single surface.
+								Throughout the project, I designed quality control assessments and analyzed next generation sequencing data 
+								with in-house software. In addition, I presented research results to senior scientists, managers and directors 
+								to support patent applications and product development in the company. Although I can not disclose many details of the project
+								due to NDA commitments, I am happy to share my amazing Illumina experience with anyone who is interested.</p>
+								<a href="https://www.illumina.com/company/careers/illumina-careers/interns.html" target="_blank" class="btn btn-outline-info">iAspire Internship</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Analog.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Analog ODE Solver</h1>
+						<p class="card-subtitle">Spring 2018</p>
+						<p class="card-text">Analog computer design</p>
+						<a href="#ODEModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="ODEModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Analog ODE Solver</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Although rarely used in today’s world, analog computers can be extremely useful in solving mathematical operations 
+								and differential equations. Using electrical engineering principals, I designed and built an analog computer 
+								using a combination of circuits to solve an ordinary differential equation modeling glucose transport and metabolism 
+								within a cell with my peers. <i>Matlab</i> modeling and analytical calculus were used to verify the analog computers’ 
+								solutions obtained from oscilloscopes.
+							</p>
+							<a href="Documents/Analog ODE Solver.pdf" target="_blank" class="btn btn-outline-info">Report</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/EKG.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">EKG Data Processing</h1>
+						<p class="card-subtitle">Spring 2018</p>
+						<p class="card-text">EKG signal acquisition and visualization</p>
+						<a href="#EKGModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="EKGModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">EKG Data Processing</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>To better understand cardiovascular rhythms, I processed EKG signals end-to-end 
+								from signal acquisition to visualization along with my peers. With voltage input from 7 electrodes on a 
+								live human subject, large, noisy time series data were generated. Using <i>Matlab</i>, running average filters and other 
+								signal processing algorithms were applied in order to visualize EKG metrics such as heart rate and peak shapes. 
+							</p>
+							<a href="Documents/EKG Data Processing.pdf" target="_blank" class="btn btn-outline-info">Report</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="leadership">
+			<br>
+			<br>
+			<br>
+		</div>
+    </div>
+
+	<!--- Leadership -->
+	<div class="container-fluid padding">
+		<h1 class="display-5 padding">Leadership</h1>
+		
+        <div class="row padding">
+            <div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/UW CoE Image.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">UW College of Engineering</h1>
+						<p class="card-subtitle">Spring 2018 - Winter 2019</p>
+						<a href="#COEModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="COEModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">UW College of Engineering</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p >During my time at the UW, I served as a teaching assistant in <i> Solid and Gel 
+								Mechanics </i> and <i> Introduction to Engineering Design </i> courses. Through teaching, 
+								not only have I gained further technical understanding in the topics, I have 
+								also learned to explain concepts in ways students can understand, as opposed to approaches
+								I prefer. I have been fortunate to have incredible 
+								mentors who have helped shaped my professional career, and I am grateful to be 
+								able to pay it forward through teaching.</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+            <div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/BWB.png">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Bioengineers Without Borders</h1>
+						<p class="card-subtitle">Winter 2016 - Winter 2019</p>
+						<a href="#BWBModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="BWBModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Bioengineers Without Borders (BWB)</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Taking on one of the Grand Challenges in Global Health issued by the Bill & Melinda 
+								Gates Foundation, I co-founded Anophelseize, looking to develop a low-cost mosquito capturing 
+								device to be used for field malaria research. 
+								As part of 
+								<a href="https://bwb-uw.wixsite.com/noborders" target="_blank">UW BWB</a> 
+								in collaboration with the Target Malaria Research Consortium and the 
+								Uganda Virus Research Institute, I led an interdisciplinary team of 18 undergraduate and 
+								graduate students in this effort. I served as the director of funding and communications to
+								help secure $2,000+ in prototype funding and excelled in 
+								<a href="https://blog.foster.uw.edu/2018-health-innovation-challenge-finalists/" 
+								target="_blank">health innovation competitions</a>.</p>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+            <div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/URP Image.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Undergraduate Research Program</h1>
+						<p class="card-subtitle">Winter 2018 - Summer 2019</p>
+						<a href="#URPModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+
+			<div class="modal fade" id="URPModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Undergraduate Research Program</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p>Research defined my undergraduate experience and I am constantly looking to encourage 
+								students to find their passions through research. Towards this, I served as an Undergraduate 
+								Research Leader and a symposium abstract reviewer with UW’s 
+								<a href="https://www.washington.edu/undergradresearch/" target="_blank">Undergraduate Research Program</a>. 
+								Through the program, I told my story in first year classrooms and 
+								<a href="http://www.dailyuw.com/science/article_4d012a2a-e3c6-11e8-b5f1-8f38f3760b1a.html" 
+								target="_blank">UW Daily interviews</a>, 
+								and provided inspiration and logistical support for students looking to perform 
+								undergraduate research in all disciplines at the UW. </p>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Outreach.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">UW STEM Outreach</h1>
+						<p class="card-subtitle">Summer 2018 - Spring 2019</p>
+						<a href="#STEMModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+
+			<div class="modal fade" id="STEMModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">UW STEM Outreach</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p> Reflecting on my young scientific career so far, the biggest lesson I have learned is that if I 
+								really aspire to serve the global community, I cannot do it alone. By integrating my 
+								experiences with my leadership style, I constantly look to mentor the next generation 
+								of talented difference-makers in carving their own paths. From inspiring future scientists 
+								serving as an advisor for the 
+								<a href="http://www.campneuro.org/" target="_blank">UW School of Medicine Summer Camps</a>
+								 to sharing my passion for bioengineering at the annual 
+								 <a href="https://www.engr.washington.edu/about/k12/discoverydays" target="_blank">Engineering Discovery Days</a>,
+								 I continue to develop my capacity for leadership, setting the foundation to become 
+								a life-long community builder and mentor. </p>
+						</div>
+					  </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/ASUW.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Associated Students of the UW</h1>
+						<p class="card-subtitle">Spring 2017 - Spring 2019</p>
+						<a href="#ASUWModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="ASUWModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Associated Students of the UW (ASUW)</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p> Outside of the classroom, I am passionate about promoting diversity and ensuring that every 
+								student has the opportunity to achieve their goals. Within the 
+								<a href="http://www.asuw.org/" target="_blank">ASUW</a>, 
+								 I developed as a Leader in the 
+								<a href="http://uwleaders.asuw.org/" target="_blank">UW Leaders program</a>, 
+								 served on the 
+								<a href="http://volunteer.asuw.org/personnel-committee/" target="_blank">Personnel Committee</a>
+								 to help students take on leadership roles, campaigned for 
+								<a href="http://www.dailyuw.com/news/article_80fc092c-55a9-11e8-918e-b7cbf7f89014.html" 
+								target="_blank">Board of Directors</a>
+								 that share my same vision, and helped first year students transition to the UW as a 
+								<a href="https://fyp.washington.edu/become-a-student-leader/dawg-daze-leaders/" target="_blank">Dawg Daze Leader</a>.
+								I am committed to continue fostering diverse communities to achieve our common goals. 
+								To illustrate it quite simply, people are my passion. </p>
+						</div>
+					  </div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<!--- Honors -->
+	<div id="honors">
+		<br>
+		<br>
+		<br>
+	</div>
+	<div class="container-fluid padding even">
+		<h1 class="display-5 padding">Honors</h1>
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Tau Beta Pi Engineering Honors Society </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> May 2020 </h3>
+            </div>
+        </div>
+        <h4> Inducted for leadership and academic achievements (top 20% of senior class in UW College of Engineering)</h4>
+        
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;">  
+                    <a href="https://www.washington.edu/husky100/#name=eric-yang" 
+				    target="_blank" style="color:black">Husky 100</a>
+                </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Mar 2020 </h3>
+            </div>
+        </div>
+        <h4> One of 100 students recognized for making the most of their time at the UW by connecting experiences to make a difference </h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Husky Empowerment Award </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Apr 2019 </h3>
+            </div>
+        </div>
+        <h4> Awarded to UW Bioengineers Without Borders for our efforts to tackle challenging global health needs as a student organization</h4>
+
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Buerk Center for Entrepreneurship Prototype Funding </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Jan 2019 </h3>
+            </div>
+        </div>
+        <h4> Awarded annual research funding to design and develop male mosquito capturing devices at the UW</h4>
+
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Engineering Design Coach Scholarship </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Sept 2018 </h3>
+            </div>
+        </div>
+        <h4> Scholarship awarded to exceptional teaching assistants mentoring first year UW engineering students</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Levinson Emerging Scholar Award </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Sept 2018 </h3>
+            </div>
+        </div>
+        <h4> Prestigious scholarship and research funding awarded to talented UW students pursuing advanced bioscience research</h4>
+
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> CoMotion Mary Gates Innovation Scholarship </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Jun 2018 </h3>
+            </div>
+        </div>
+        <h4> Scholarship awarded for full-time intensive summer research internship participation in UW faculty-led startup initiatives</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Hollomon Health Innovation Challenge Finalist </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Mar 2018 </h3>
+            </div>
+        </div>
+        <h4> Selected as a finalist out of 39 entries to present male mosquito capturing device to 150 experts in healthcare and business</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Buerk Center for Entrepreneurship Prototype Funding </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Jan 2018 </h3>
+            </div>
+        </div>
+        <h4> Awarded annual research funding to design and develop male mosquito capturing devices at the UW</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Quarterly Dean's List </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Dec 2016 </h3>
+            </div>
+        </div>
+        <h4> Achieved over a 3.5 GPA for 10 academic quarters at the University of Washington</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Purple and Gold Scholarship </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> Sept 2016 </h3>
+            </div>
+        </div>
+        <h4> Scholarship awarded for four years of undergraduate studies at the University of Washington</h4>
+
+        <div class="row padding">
+            <div class="col-md-10 bottom-column">
+                <h2 style="float: left;"> Math Department Award </h2>
+            </div>
+            <div class="col-md-2 bottom-column">
+                <h3 style="float: right;"> May 2014 </h3>
+            </div>
+        </div>
+		<h4> Awarded to one student each year for excellence in mathematics at San Ramon Valley High School</h4>
+		
+		<div id="contact">
+			<br>
+			<br>
+			<br>
+		</div>
+
+	</div>
+	
+	<!--- Contact -->
+	<div class="container-fluid padding">
+		<h1 class="display-5 padding">Let's connect!</h1>
+		
+		<form action="https://formspree.io/xnqzeqqj" method="POST" enctype="multipart/form-data">
+			<div class="form-group padding">      
+				<label for="name" class="mb-0">
+					Name
+					<label class="text-danger">*</label>
+				</label>
+				<br>
+				<input type="text" class="form-control" placeholder="Your name" name="Name" aria-label="Name" 
+				aria-describedby="basic-addon1" required="">
+			</div>
+			<div class="form-group padding">      
+				<label for="email" class="mb-0">
+					Email Address
+					<label class="text-danger">*</label>
+				</label>
+				<br>
+				<input type="text" class="form-control" placeholder="Your email" name="_replyto" aria-label="Email" 
+				aria-describedby="basic-addon1" required="">
+			</div>
+			<div class="form-group padding">      
+				<label for="number" class="mb-0">
+					Phone number
+				</label>
+				<br>
+				<input type="text" class="form-control" placeholder="Your number" name="Number" aria-label="Number" 
+				aria-describedby="basic-addon1">
+			</div>
+			<div class="form-group padding">      
+				<label for="subject" class="mb-0">
+					Subject
+				</label>
+				<br>
+				<input type="text" class="form-control" placeholder="Title your message" name="Subject" aria-label="Subject" 
+				aria-describedby="basic-addon1">
+				<input type="hidden" name="_subject" value="subject" />
+			</div>
+			<div class="form-group padding">
+				<label for="comment" class="mb-0">
+					Message
+					<label class="text-danger">*</label>
+				</label>
+				<br>
+				<textarea class="form-control" placeholder="Type your message here" name="Message" rows="5" id="message" required=""></textarea>
+			</div>
+			<div class="form-group padding">
+				<input type="text" name="_gotcha" style="display:none" />
+				<div class="contact-submit">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+</body>
 
 <!--- Footer -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center padding">
-			<div class="col-12 social padding">
-				<a href="Documents/CV - Eric Yang  .pdf" target="_blank"><i class ="fas fa-id-card"></i></a>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-12 social">
+				<a href="Documents/Resume - Eric Yang  .pdf" target="_blank"><i class ="fas fa-id-card"></i></a>
 				<a href="mailto:ericyang789@gmail.com" target="_blank"><i class ="fas fa-envelope"></i></a>
 				<a href="https://www.linkedin.com/in/ericyang98/" target="_blank"><i class ="fab fa-linkedin"></i></a>
 				<a href="https://github.com/ericyang789" target="_blank"><i class ="fab fa-github"></i></a>
@@ -91,15 +1024,14 @@
 			</script>
 			Eric Yang
 			<br>
-			I crafted this site with HTML and CSS aided by Bootstrap
+			I handcrafted this site with HTML and CSS, aided by Bootstrap
 			<br>
-			Site last updated 
-			<script type="text/javascript">
-				localStorage.setItem("updateDate", "August 17th, 2020")
-				document.write(localStorage.getItem("updateDate"));
-			</script>
+			Site last updated November 27th, 2020
 		</div>
 	</div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
