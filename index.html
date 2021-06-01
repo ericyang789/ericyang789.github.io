@@ -83,7 +83,7 @@
 						Medical School</i>. I recently completed my BS in Bioengineering and minor in applied mathematics at the 
 						<i>University of Washington</i>. Since my first introduction to data science, I have been fascinated by 
 						the tremendous impact that machine learning and computational tools have in driving medical innovation. 
-						Specifically, I am interested in leveraging deep learning techniques to advance personalized medicine and 
+						Specifically, I am interested in leveraging deep learning techniques to support clinical decision making and 
 						progress disease diagnosis and treatment.</p>
 						
 					<br>
@@ -108,13 +108,51 @@
 		<h1 class="display-5 padding">Projects</h1>
 		
         <div class="row padding">
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/XRay.jpeg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Lung Lesion Diagnosis</h1>
+						<p class="card-subtitle">Spring 2021</p>
+						<p class="card-text">Deep learning models for lung lesion classification</p>
+						<a href="#LungModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="LungModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Lung Lesion Diagnosis</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p> The early identification of lung lesions is very important as lesions have a high likelihood of becoming cancerous.
+								An accurate, computer-aided diagnosis model could improve workflow prioritization, 
+								support decision making in clinical settings, and ultimately help progress large-scale screening 
+								and global population health initiatives.
+								Towards this, my peers and I developed and tuned deep learning models for automated chest 
+								radiograph interpretation of lung lesions with high performance (>0.8 AUROC). Leveraging popular <i>Python</i> 
+								packages and deep learning frameworks such as <i>Scikit-Learn</i>, <i>Pandas</i>, <i>Numpy</i>, <i>Keras</i>, and <i>TensorFlow</i>,
+								we also explored the implications of class imbalance and dataset cleanliness in deep learning model development. 
+							</p>
+								<a href="https://github.com/ericyang789/Lung-Lesion-Diagnosis" target="_blank" class="btn btn-outline-info">Code</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
             <div class="col-lg-4 d-flex">
                 <div class="card">
-                    <img class="card-img top" src="Images/Viz.png">
+                    <img class="card-img top" src="Images/Food.jpeg">
                     <div class="card-body d-flex flex-column">
-                        <h1 class="card-title">NEISS DataViz</h1>
-						<p class="card-subtitle">Autumn 2020</p>
-						<p class="card-text">RShiny app for injury database visualization</p>
+                        <h1 class="card-title">Adverse Events Viz</h1>
+						<p class="card-subtitle">Spring 2021</p>
+						<p class="card-text">RShiny app for adverse events data visualization</p>
 						<a href="#VizModal" class="stretched-link" data-toggle="modal"></a>
                     </div>
                 </div>
@@ -124,21 +162,56 @@
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 					<div class="modal-content">
 						<div class="modal-header">
-						  <h5 class="modal-title" id="BackdropLabel">NEISS DataViz</h5>
+						  <h5 class="modal-title" id="BackdropLabel">Adverse Events Viz</h5>
 						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						  </button>
 						</div>
 						<div class="modal-body">
-							<p>The National Electronic Injury Surveillance System (NEISS) collects data on consumer
-								product-related injuries occuring in the United States. With millions of observations 
-								dating back to 2008 recorded in tabular form, there is a need for a visualization platform 
-								to perform exploratory analyses on this large data set. Using <i>RShiny</i> and <i>tidyverse</i> 
-								packages, I created a reactive dashboard that allows user customization for graphical displays of  
-								NEISS data. The flexible application enables different subsets, facets and groups based on
-								patient demographic and injury diagnoses to help users observe trends in the database.
+							<p> The adverse events dataset is compiled by the U.S. FDA where reports from consumers about adverse 
+								events involving in-market products (foods, dietary supplements and cosmetics) are collected. With thousands of reports 
+								dating back to 2004 recorded in tabular form, there is a need for a visualization platform 
+								to perform exploratory analyses on this large data set. Using <i>RShiny</i>, <i>tidyverse</i> and <i>Plotly</i> 
+								packages, my peer and I created a reactive dashboard that allows user customization o linked graphical displays of  
+								the adverse events data. The flexible application enables different subsets, facets and groups based on
+								victim demographic and product categories to help users observe trends in the database.
 							</p>
-								<a href="https://github.com/ericyang789/NEISS-DataViz" target="_blank" class="btn btn-outline-info">Code</a>
+								<a href="https://github.com/ericyang789/Adverse-Events-Viz" target="_blank" class="btn btn-outline-info">Code</a>
+								<a href="https://ericyang789.shinyapps.io/adverse-events-viz/" target="_blank" class="btn btn-outline-info">App</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 d-flex">
+                <div class="card">
+                    <img class="card-img top" src="Images/Computer.jpeg">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Parallelized t-SNE</h1>
+						<p class="card-subtitle">Spring 2021</p>
+						<p class="card-text">Big Compute: Parallelized t-SNE for Dimensionality Reduction</p>
+						<a href="#CSModal" class="stretched-link" data-toggle="modal"></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="modal fade" id="CSModal" data-keyboard="false" tabindex="-1" aria-labelledby="BackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="BackdropLabel">Parallelized t-SNE</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<p> t-Distrubuted Stochastic Neighbor Embedding (t-SNE) is a popular dimensionality 
+								reduction technique for visualizing large, high-dimensional datasets in low-dimensional space. 
+								Motivated by customizable parallelizability in lower level programming languages, my peers and I implemented the first t-SNE algorithm in <i>C</i> to our knowledge.
+								In addition, we parallelized our software with <i>OpenACC</i> directives to leverage
+								GPU computing and achieved significant speedup compared to popular Python implementations.
+							</p>
+								<a href="https://github.com/ericyang789/Parallel-Compute-Project" target="_blank" class="btn btn-outline-info">Code</a>
 						</div>
 					  </div>
 				</div>
@@ -1026,7 +1099,7 @@
 			<br>
 			I handcrafted this site with HTML and CSS, aided by Bootstrap
 			<br>
-			Site last updated November 27th, 2020
+			Site last updated May 31st, 2021
 		</div>
 	</div>
 </footer>
